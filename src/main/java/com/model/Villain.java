@@ -1,0 +1,52 @@
+package com.model;
+
+import java.util.*;
+
+public class Villain extends Character {
+	private HashSet<String> compliments = new HashSet<>();
+
+	Villain(String name) {
+		super(name);
+	}
+	
+	public Villain (String name,int health){
+		super(name);
+		setHealth(health);
+	}
+
+	String strikeUpdate() {
+		return "Does not apply\n Villians can't strike players(for now) :D";
+	}
+
+	public String getSummary() {
+		return "&ensp; &ensp;&ensp;&ensp;" + this.toString();
+	}
+
+	public boolean setCompliment(String compliment) {
+		return compliments.add(compliment);
+		// System.out.println(compliment);
+	}
+
+	public String getCompliments() {
+		if (this.compliments.isEmpty())
+			return "No Compliments yet!";
+		else {
+			String allCompliments = "The Compliments offered to " + this.getName() + " are:<br/>";
+			for (String comp : compliments) {
+				allCompliments += comp + "<br/>";
+			}
+
+			// System.out.println(allCompliments);
+			return allCompliments;
+		}
+	}
+	
+	@Override
+	public String toString() {
+
+		return "<br/><br/> Name: " + getName() + "<br/>" + "         Health: " + String.format("%.0f", getHealth())
+				+ "<br/>";
+	}
+
+	
+}

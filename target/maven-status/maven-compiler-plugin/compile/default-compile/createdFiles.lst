@@ -1,0 +1,15 @@
+com\control\Move.class
+com\model\service\DBConnection.class
+com\control\GetOpponent.class
+com\model\Character.class
+com\model\Player.class
+com\control\LoginController.class
+com\control\filter\LoginFilter.class
+com\model\Villain.class
+com\control\Opponent.class
+com\control\RegisterController.class
+com\control\HomeController.class
+com\model\service\DBService.class
+com\model\User.class
+com\model\service\UserService.class
+com\control\GetCompliment.class

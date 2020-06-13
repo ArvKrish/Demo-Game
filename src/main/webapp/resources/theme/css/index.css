@@ -1,0 +1,98 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: #540804;
+	color: #F15156;
+}
+
+.header {
+	width: 100%;
+	height: 30%;
+	display: inline;
+	backgrounf-color: #EFF7CF;
+	color: #EE8572;
+}
+
+.greet {
+	float: left;
+	width: 50%;
+}
+
+.status {
+	float: left;
+	width: 50%;
+}
+
+.formLogin {	position: relative;
+	left:10%;
+}.formRegister {	position: relative;
+	left:15%;
+	top:15%;
+}
+
+.message {
+	width: 80%;
+	height: 50%;
+	background-color: #292929;
+	margin: 100px;
+	color: #9a1f40;
+}
+
+.info {
+	width: 50%;
+	height: 50%;
+	padding: 10% 10%;
+	color: #F15156;
+}
+
+.container {
+	width: 70%;
+	height: 30%;
+	background-color: #292929;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	border-radius: 25px;
+	margin: auto;
+	color: #B7B7B7;
+}
+
+a {
+	color: #B7B7B7;
+	font-family: Florence, cursive;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: helvetica;
+}
+
+.loginbox {
+	width: 25%;
+	min-height: 50%;
+	background-color: #292929;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+	color: #B7B7B7;
+	overflow: hidden;
+}
+
+.error {
+	color: red;
+	font-size: 14px;
+}
+
+button, input[type=button], input[type=submit], input[type=reset] {
+	background-color: #F15156;
+	border: none;
+	color: #124E78;
+	padding: 10px 20px;
+	text-decoration: none;
+	margin: 4px 2px;
+	border-radius: 5px;
+	cursor: pointer;
+}
